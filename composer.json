@@ -1,0 +1,13 @@
+{
+    "name": "stephen/dingtalk",
+    "description": "``SDK",
+    "type": "library",
+    "authors": [
+        {
+            "name": "stephen",
+            "email": "mhzuhe@163.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
