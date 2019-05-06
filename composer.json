@@ -1,11 +1,11 @@
 {
-    "name": "stephen/dingtalk",
-    "description": "``SDK",
+    "name": "cq_stephen/dingtalk",
+    "description": "dingtalk SDK",
     "type": "library",
     "authors": [
         {
-            "name": "stephen",
-            "email": "mhzuhe@163.com"
+            "name": "cq_stephen",
+            "email": "775038529@qq.com"
         }
     ],
     "minimum-stability": "stable",
