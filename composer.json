@@ -1,6 +1,6 @@
 {
     "name": "cq_stephen/dingtalk",
-    "description": "dingtalk SDK",
+    "description": "DingTalk SDK",
     "type": "library",
     "authors": [
         {
@@ -8,6 +8,13 @@
             "email": "775038529@qq.com"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {}
+    "minimum-stability": "dev",
+    "require": {
+    	"php": ">=7.0.0"
+    },
+    "autoload": {
+    	"psr-4": {
+    		"DingTalk\\": "src/DingTalk"
+    	}
+    }
 }
