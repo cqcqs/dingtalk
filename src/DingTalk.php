@@ -2,7 +2,7 @@
 
 namespace DingTalk;
 
-include '../TopSdk.php';
+include(__DIR__.'/../TopSdk.php');
 
 class DingTalk {
 
@@ -38,7 +38,7 @@ class DingTalk {
     public function getProcessInstanceList($processCode = "", $startTime = 0, $endTime = 0): array
     {
         if(!$processCode){
-            throw new \Exception('process_code is null');
+            throw new \Exception('缺少流程模板唯一标识');
         }
         if(!$startTime){
             $startTime = strtotime(date('Y-m-d'));
@@ -52,7 +52,7 @@ class DingTalk {
             $request->setEndTime($endTime);
         }
         $response = $client->execute($request, $this->access_token, $this->get_process_instance_list_url);
-        return $response->result['list'];
+        return $response->result->list;
     }
 
     /**
